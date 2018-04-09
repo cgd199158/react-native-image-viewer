@@ -109,7 +109,7 @@ exports.simpleStyle = {
         backgroundColor: "transparent"
     },
     countText: {
-        color: "white",
+        color: "#333",
         fontSize: 16,
         backgroundColor: "transparent",
         textShadowColor: "rgba(0, 0, 0, 0.3)",
