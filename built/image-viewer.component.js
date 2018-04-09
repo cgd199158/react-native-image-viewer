@@ -477,7 +477,7 @@ var ImageViewer = /** @class */ (function (_super) {
         });
         return (<react_native_1.Animated.View style={{ zIndex: 9999 }}>
         <react_native_1.Animated.View style={__assign({}, this.styles.container, { opacity: this.fadeAnim })}>
-          {this.props.renderHeader(this.state.currentShowIndex)}
+         
 
           <react_native_1.View style={this.styles.arrowLeftContainer}>
             <react_native_1.TouchableWithoutFeedback onPress={this.goBack}>
@@ -494,7 +494,6 @@ var ImageViewer = /** @class */ (function (_super) {
           <react_native_1.Animated.View style={__assign({}, this.styles.moveBox, { transform: [{ translateX: this.positionX }], width: this.width * this.props.imageUrls.length })}>
             {ImageElements}
           </react_native_1.Animated.View>
-          {this.props.renderIndicator((this.state.currentShowIndex || 0) + 1, this.props.imageUrls.length)}
 
           {this.props.imageUrls[this.state.currentShowIndex || 0] &&
             this.props.imageUrls[this.state.currentShowIndex || 0]
@@ -511,6 +510,8 @@ var ImageViewer = /** @class */ (function (_super) {
         ]}>
             {this.props.renderFooter(this.state.currentShowIndex)}
           </react_native_1.View>
+          {this.props.renderHeader(this.state.currentShowIndex)}
+          {this.props.renderIndicator((this.state.currentShowIndex || 0) + 1, this.props.imageUrls.length)}
         </react_native_1.Animated.View>
       </react_native_1.Animated.View>);
     };
