@@ -110,8 +110,8 @@ export const simpleStyle: {
   count: {
     position: "absolute",
     width: 80,
-    left: Dimensions.get('window').width - 40,
-    top: 38,
+    left: ((Dimensions.get('window').width)/2) - 40,
+    top: 35,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "transparent"

@@ -102,8 +102,8 @@ exports.simpleStyle = {
     count: {
         position: "absolute",
         width: 80,
-        left: react_native_1.Dimensions.get('window').width - 40,
-        top: 38,
+        left: ((react_native_1.Dimensions.get('window').width) / 2) - 40,
+        top: 35,
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "transparent"
