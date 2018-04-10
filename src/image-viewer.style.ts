@@ -111,7 +111,7 @@ export const simpleStyle: {
     position: "absolute",
     width: 80,
     left: ((Dimensions.get('window').width)/2) - 40,
-    top: Platform.OS === "ios" ?  35 : 15,
+    top: Platform.OS === "ios" ?  35 : 18,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "transparent"
