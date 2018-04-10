@@ -1,4 +1,4 @@
-import { TextStyle, ViewStyle, Dimensions } from "react-native"
+import { TextStyle, ViewStyle, Dimensions, Platform } from "react-native"
 
 export default (
   width: number,
@@ -111,7 +111,7 @@ export const simpleStyle: {
     position: "absolute",
     width: 80,
     left: ((Dimensions.get('window').width)/2) - 40,
-    top: 35,
+    top: Platform.OS === "ios" ?  35 : 15,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "transparent"

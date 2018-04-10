@@ -103,7 +103,7 @@ exports.simpleStyle = {
         position: "absolute",
         width: 80,
         left: ((react_native_1.Dimensions.get('window').width) / 2) - 40,
-        top: 35,
+        top: react_native_1.Platform.OS === "ios" ? 35 : 15,
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "transparent"
